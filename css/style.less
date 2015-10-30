@@ -1,0 +1,149 @@
+/*   
+ * Version: 1.1
+ * Author: Nathan Rosenberg
+*/
+
+@import "mixins.less";
+@import "colors.less";
+body {
+    font-family: 'Roboto', sans-serif;
+    color: @bodyText;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+blockquote {
+    border-left: 3px solid #ccd1d9;
+}
+
+.center-block {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.img-rounded {
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+}
+
+
+/* General */
+
+.background {
+    min-height: 100vh;
+    background: linear-gradient( rgba(31, 147, 225, 0.9), rgba(31, 147, 225, 0.9)), url(../img/bg.jpg);
+    background-size: cover;
+//    background: #1f93e1;
+}
+
+
+/* Header */
+
+.header {
+    padding: 10px 0;
+    color: #fff;
+    width: 100%;
+    line-height: 72px;
+    img {
+        margin-right: 10px;
+        transition: opacity .16s ease-in-out;
+        opacity: 1;
+        filter: alpha(opacity=100);
+        &:hover {
+            opacity: .8;
+            filter: alpha(opacity=80);
+        }
+        a {
+            font-size: 20px;
+            font-weight: bold;
+            color: white;
+            &:hover,
+            &:active {
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+
+/* Conent */
+
+.content {
+    padding: 70px 0;
+    .words {
+        margin-top: 20px;
+        color: @white;
+        h1 {
+            margin: 0;
+        }
+        .first-line {
+            font-weight: 200;
+            font-size: 80px;
+        }
+        .second-line {
+            font-weight: 500;
+            font-size: 80px;
+        }
+        .description {
+            padding-top: 20px;
+            font-size: 25px;
+            font-weight: 400;
+        }
+        .advertiser {
+            margin-top: 10px;
+            a {
+                color: @white;
+                text-decoration: underline;
+            }
+        }
+    }
+    .input {
+        margin-top: 80px;
+        input[type="text"] {
+            padding: 10px;
+            border-top-left-radius: 6px;
+            border-bottom-left-radius: 6px;
+            font-size: 18px;
+            height: 50px;
+            border: none;
+            .box-shadow(inset 0 -2px rgba(0, 0, 0, .25));
+            transition: 0.3s;
+        }
+        .btn {
+            height: 50px;
+            font-size: 18px;
+            .box-shadow(inset 0 -2px rgba(0, 0, 0, .25));
+            border: none;
+            border-top-right-radius: 6px;
+            border-bottom-right-radius: 6px;
+        }
+        .btn-primary {
+            background-color: #f37321;
+            &:hover {
+                background-color: #F15D22;
+            }
+            &:focus {
+                outline: 0;
+            }
+            &:active {
+                .box-shadow(none);
+            }
+        }
+    }
+}
+
+
+/* Footer */
+
+.footer {
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-top: 1px solid #dbdbdb;
+    text-align: center;
+    p {
+        margin: 0;
+        color: #555;
+    }
+}
