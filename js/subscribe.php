@@ -4,7 +4,7 @@ $listId = '7630d2947f'; // your mailchimp LIST ID here
 $double_optin=false;
 $send_welcome=false;
 $email_type = 'html';
-$email = $_POST['newsletter_email'];
+$email = $_POST['email'];
 //replace us2 with your actual datacenter
 $submit_url = "http://us10.api.mailchimp.com/1.3/?method=listSubscribe";
 $data = array(

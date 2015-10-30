@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="img/favicon.ico">
     <link rel="publisher" href="//plus.google.com/u/0/b/115182725299684127358/115182725299684127358">
+    <script src="js/script.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 </head>
 
@@ -53,11 +54,11 @@
                         <h1 class="first-line">Have fun</h1>
                         <h1 class="second-line">doing good.</h1>
                         <h3 class="description">Play a trivia game to raise money for charity.</h3>
-                        <form action="js/subscribe.php" class="input" id="subscribe_form" novalidate="novalidate">
+                        <form action="js/subscribe.php" method="post" class="input" id="subscribe_form">
                             <div class="input-group">
-                                <input type="text" class="form-control" name="name" placeholder="Email address">
+                                <input type="email" id="subscribe_email" class="form-control" name="email" placeholder="Email address">
                                 <div class="input-group-btn">
-                                    <input type="submit" value="Request invite" class="btn btn-primary" tabindex="-1">
+                                    <button type="submit" id="subscribe_submit" class="btn btn-primary" tabindex="-1">Request invite</button>
                                 </div>
                             </div>
                         </form>
@@ -66,9 +67,19 @@
                 </div>
             </div>
         </section>
+        <section class="social" id="social">
+            <div class="container">
+                <div class="soc-buttons">
+                    <ul class="list-inline">
+                        <a href="" class="soc-btn facebook"><li><i class="fa fa-facebook"></i></li></a>
+                        <a href="" class="soc-btn twitter"><li><i class="fa fa-twitter"></i></li></a>
+                        <a href="" class="soc-btn linkedin"><li><i class="fa fa-linkedin"></i></li></a>
+                    </ul>
+                </div>
+            </div>
+        </section>
     </div>
     <footer class="footer" id="footer">
         <p class="copyright">Copyright &copy; 2015 Driply. All rights reserved.</p>
     </footer>
-<script src="js/script.js"></script>
 </body>
