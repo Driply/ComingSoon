@@ -35,7 +35,7 @@ blockquote {
     min-height: 100vh;
     background: linear-gradient( rgba(31, 147, 225, 0.9), rgba(31, 147, 225, 0.9)), url(../img/bg.jpg);
     background-size: cover;
-//    background: #1f93e1;
+    //    background: #1f93e1;
 }
 
 
@@ -101,7 +101,7 @@ blockquote {
     }
     .input {
         margin-top: 80px;
-        input[type="text"] {
+        input[type="email"] {
             padding: 10px;
             border-top-left-radius: 6px;
             border-bottom-left-radius: 6px;
@@ -118,6 +118,7 @@ blockquote {
             border: none;
             border-top-right-radius: 6px;
             border-bottom-right-radius: 6px;
+            transition: all .1s ease-in-out;
         }
         .btn-primary {
             background-color: #f37321;
@@ -129,6 +130,54 @@ blockquote {
             }
             &:active {
                 .box-shadow(none);
+            }
+        }
+    }
+}
+
+
+/* Social */
+
+.social {
+    font-size: 25px;
+    padding: 30px 0;
+    .soc-buttons {
+        text-align: center;
+        .soc-btn {
+            border-radius: 5px;
+            .box-shadow(inset 0 -2px rgba(0, 0, 0, .25));
+            width: 40px;
+            height: 40px;
+            position: relative;
+            display: inline-block;
+            transition: all .1s ease-in-out;
+            i {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                color: @white;
+            }
+            &:active {
+                .box-shadow(none);
+            }
+        }
+        .facebook {
+            background: #3864A3;
+            &:hover {
+                background: darken(#3864A3,5%);
+            }
+        }
+        .twitter {
+            background: #55ACEE;
+            &:hover {
+                background: darken(#55ACEE,5%);
+            }
+        }
+        .linkedin {
+            background: #0177B5;
+            &:hover {
+                background: darken(#0177B5,5%);
             }
         }
     }
