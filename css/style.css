@@ -126,55 +126,53 @@ blockquote {
   -moz-box-shadow: none;
   box-shadow: none;
 }
-/* Social */
-.social {
-  font-size: 25px;
-  padding: 30px 0;
+.content .soc-buttons {
+  font-size: 20px;
+  margin: 50px 0 0 5px;
 }
-.social .soc-buttons {
-  text-align: center;
-}
-.social .soc-buttons .soc-btn {
+.content .soc-buttons .soc-btn {
   border-radius: 5px;
-  -webkit-box-shadow: inset 0 -2px rgba(0, 0, 0, 0.25);
-  -moz-box-shadow: inset 0 -2px rgba(0, 0, 0, 0.25);
-  box-shadow: inset 0 -2px rgba(0, 0, 0, 0.25);
-  width: 40px;
-  height: 40px;
+  -webkit-box-shadow: inset 0 -1px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: inset 0 -1px rgba(0, 0, 0, 0.25);
+  box-shadow: inset 0 -1px rgba(0, 0, 0, 0.25);
+  width: 35px;
+  height: 35px;
   position: relative;
   display: inline-block;
   transition: all 0.1s ease-in-out;
+  margin-right: 3px;
 }
-.social .soc-buttons .soc-btn i {
+.content .soc-buttons .soc-btn i {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: #ffffff;
 }
-.social .soc-buttons .soc-btn:active {
+.content .soc-buttons .soc-btn:active {
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
 }
-.social .soc-buttons .facebook {
+.content .soc-buttons .facebook {
   background: #3864A3;
 }
-.social .soc-buttons .facebook:hover {
+.content .soc-buttons .facebook:hover {
   background: #315890;
 }
-.social .soc-buttons .twitter {
+.content .soc-buttons .twitter {
   background: #55ACEE;
 }
-.social .soc-buttons .twitter:hover {
+.content .soc-buttons .twitter:hover {
   background: #3ea1ec;
 }
-.social .soc-buttons .linkedin {
+.content .soc-buttons .linkedin {
   background: #0177B5;
 }
-.social .soc-buttons .linkedin:hover {
+.content .soc-buttons .linkedin:hover {
   background: #01669c;
 }
+/* Social */
 /* Footer */
 .footer {
   padding: 20px;
