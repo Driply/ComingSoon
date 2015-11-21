@@ -26,7 +26,7 @@ blockquote {
 /* General */
 .background {
   min-height: 100vh;
-  background: linear-gradient(rgba(31, 147, 225, 0.9), rgba(31, 147, 225, 0.9)), url(../img/bg.jpg);
+  background: linear-gradient(rgba(0, 178, 202, 0.9), rgba(0, 178, 202, 0.9)), url(../img/bg.jpg);
   background-size: cover;
 }
 /* Header */
@@ -75,7 +75,7 @@ blockquote {
   font-size: 80px;
 }
 .content .words .description {
-  padding-top: 20px;
+  margin-top: 20px;
   font-size: 25px;
   font-weight: 400;
 }
@@ -87,7 +87,7 @@ blockquote {
   text-decoration: underline;
 }
 .content .input {
-  margin-top: 80px;
+  margin-top: 40px;
 }
 .content .input input[type="email"] {
   padding: 10px;
@@ -128,7 +128,7 @@ blockquote {
 }
 .content .soc-buttons {
   font-size: 20px;
-  margin: 50px 0 0 5px;
+  margin: 40px 0 0 5px;
 }
 .content .soc-buttons .soc-btn {
   border-radius: 5px;
