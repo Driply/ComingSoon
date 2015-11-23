@@ -16,7 +16,7 @@ body {
 .left {
     height: 100%;
     //    background: #17BEBB;
-    background: linear-gradient( rgba(26, 149, 217, 0.9), rgba(26, 149, 217, 0.9)), url(../img/bg.jpg);
+    background: linear-gradient( rgba(26, 149, 217, 0.85), rgba(26, 149, 217, 0.85)), url(../img/bg.jpg);
     background-size: cover;
     background-position: center;
     //    border-right: solid 4px #f0f0f0;
@@ -52,7 +52,6 @@ body {
         //
         //        margin-top: 250px;
         //        margin-left: 220px;
-        width: 50%;
         //        color: @body-text;
         h1 {
             margin: 0;
@@ -80,6 +79,7 @@ body {
         }
         .input {
             margin-top: 40px;
+            max-width: 550px;
             input[type="email"] {
                 padding: 10px;
                 border-top-left-radius: 6px;
@@ -87,8 +87,9 @@ body {
                 font-size: 18px;
                 height: 50px;
                 border: none;
+                background: #434A54;
                 .box-shadow(none);
-                border: solid 3px #434A54;
+//                border: solid 3px #434A54;
 //                border-right: none;
                 transition: 0.3s;
             }
