@@ -1,0 +1,163 @@
+/*   
+ * Version: 1.1
+ * Author: Nathan Rosenberg
+*/
+
+@import "mixins.less";
+@import "colors.less";
+body {
+    font-family: 'Roboto', sans-serif;
+    color: @bodyText;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    height: 100vh;
+}
+
+.left {
+    height: 100%;
+    //    background: #17BEBB;
+    background: linear-gradient( rgba(26, 149, 217, 0.9), rgba(26, 149, 217, 0.9)), url(../img/bg.jpg);
+    background-size: cover;
+    background-position: center;
+    //    border-right: solid 4px #f0f0f0;
+    header {
+        margin-top: 15px;
+    }
+    .mockup {
+        display: inline-block;
+        text-align: center;
+        img {
+            z-index: 1000;
+            position: absolute;
+            top: 50%;
+            margin-top: -300px;
+            left: 100%;
+            margin-left: -144.5px;
+        }
+    }
+}
+
+.right {
+    height: 100%;
+    //    background: linear-gradient( rgba(240, 240, 240, 0.9), rgba(240, 240, 240, 0.92)), url(../img/bg.jpg);
+    //    background-size: cover;
+    //    background: #fff;
+    padding-left: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(../img/ice_bg.png);
+    color: #333;
+    .words {
+        //
+        //        margin-top: 250px;
+        //        margin-left: 220px;
+        width: 50%;
+        //        color: @body-text;
+        h1 {
+            margin: 0;
+        }
+        .first-line {
+            font-weight: 200;
+            font-size: 80px;
+        }
+        .second-line {
+            font-weight: 500;
+            font-size: 80px;
+            color: #F47D45;
+        }
+        .description {
+            margin-top: 20px;
+            font-size: 25px;
+            font-weight: 400;
+        }
+        .advertiser {
+            margin-top: 10px;
+            a {
+                //                color: @white;
+                text-decoration: underline;
+            }
+        }
+        .input {
+            margin-top: 40px;
+            input[type="email"] {
+                padding: 10px;
+                border-top-left-radius: 6px;
+                border-bottom-left-radius: 6px;
+                font-size: 18px;
+                height: 50px;
+                border: none;
+                .box-shadow(none);
+                border: solid 3px #434A54;
+//                border-right: none;
+                transition: 0.3s;
+            }
+            .btn {
+                height: 50px;
+                font-size: 18px;
+                //            .box-shadow(inset 0 -2px rgba(0, 0, 0, .25));
+                border: solid 3px #F47D45;
+                            border-left: none;
+                border-top-right-radius: 6px;
+                border-bottom-right-radius: 6px;
+                transition: all .1s ease-in-out;
+            }
+            .btn-primary {
+                background-color: #F47D45;
+                &:hover {
+                    background-color: #F15D22;
+                    border-color: #F15D22;
+                }
+                &:focus {
+                    outline: 0;
+                }
+                &:active {
+                    .box-shadow(none);
+                }
+            }
+        }
+        .soc-buttons {
+            font-size: 20px;
+            margin: 40px 0 0 5px;
+            .soc-btn {
+                border-radius: 4px;
+                //            .box-shadow(inset 0 -1px rgba(0, 0, 0, .25));
+                width: 35px;
+                height: 35px;
+                position: relative;
+                display: inline-block;
+                transition: all .1s ease-in-out;
+                margin-right: 3px;
+                i {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    color: @white;
+                }
+                &:active {
+                    .box-shadow(none);
+                }
+            }
+            .facebook {
+                background: #3864A3;
+                &:hover {
+                    background: darken(#3864A3, 5%);
+                }
+            }
+            .twitter {
+                background: #55ACEE;
+                &:hover {
+                    background: darken(#55ACEE, 5%);
+                }
+            }
+            .linkedin {
+                background: #0177B5;
+                &:hover {
+                    background: darken(#0177B5, 5%);
+                }
+            }
+        }
+    }
+}
+@import "responsive.less";

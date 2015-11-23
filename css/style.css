@@ -26,7 +26,7 @@ blockquote {
 /* General */
 .background {
   min-height: 100vh;
-  background: linear-gradient(rgba(0, 178, 202, 0.9), rgba(0, 178, 202, 0.9)), url(../img/bg.jpg);
+  background: linear-gradient(rgba(69, 188, 244, 0.9), rgba(69, 188, 244, 0.9)), url(../img/bg.jpg);
   background-size: cover;
 }
 /* Header */
@@ -113,7 +113,7 @@ blockquote {
   transition: all 0.1s ease-in-out;
 }
 .content .input .btn-primary {
-  background-color: #f37321;
+  background-color: #F47D45;
 }
 .content .input .btn-primary:hover {
   background-color: #F15D22;
