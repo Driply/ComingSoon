@@ -80,6 +80,7 @@ body {
   -moz-box-shadow: none;
   box-shadow: none;
   transition: 0.3s;
+  color: #fff;
 }
 .right .words .input ::-webkit-input-placeholder {
   color: #fff;
