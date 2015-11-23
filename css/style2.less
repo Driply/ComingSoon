@@ -16,7 +16,7 @@ body {
 .left {
     height: 100%;
     //    background: #17BEBB;
-    background: linear-gradient( rgba(26, 149, 217, 0.9), rgba(26, 149, 217, 0.9)), url(../img/bg.jpg);
+    background: linear-gradient( rgba(26, 149, 217, 0.85), rgba(26, 149, 217, 0.85)), url(../img/bg.jpg);
     background-size: cover;
     background-position: center;
     //    border-right: solid 4px #f0f0f0;
@@ -52,7 +52,6 @@ body {
         //
         //        margin-top: 250px;
         //        margin-left: 220px;
-        width: 50%;
         //        color: @body-text;
         h1 {
             margin: 0;
@@ -80,6 +79,7 @@ body {
         }
         .input {
             margin-top: 40px;
+            max-width: 550px;
             input[type="email"] {
                 padding: 10px;
                 border-top-left-radius: 6px;
@@ -87,17 +87,28 @@ body {
                 font-size: 18px;
                 height: 50px;
                 border: none;
+                background: #434A54;
                 .box-shadow(none);
-                border: solid 3px #434A54;
-//                border-right: none;
                 transition: 0.3s;
+            }
+            ::-webkit-input-placeholder {
+                color: #fff;
+            }
+            :-moz-placeholder {
+                color: #fff;
+            }
+            ::-moz-placeholder {
+                color: #fff;
+            }
+            :-ms-input-placeholder {
+                color: #fff;
             }
             .btn {
                 height: 50px;
                 font-size: 18px;
                 //            .box-shadow(inset 0 -2px rgba(0, 0, 0, .25));
                 border: solid 3px #F47D45;
-                            border-left: none;
+                border-left: none;
                 border-top-right-radius: 6px;
                 border-bottom-right-radius: 6px;
                 transition: all .1s ease-in-out;
@@ -160,4 +171,5 @@ body {
         }
     }
 }
+
 @import "responsive.less";
