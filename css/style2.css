@@ -81,6 +81,18 @@ body {
   box-shadow: none;
   transition: 0.3s;
 }
+.right .words .input ::-webkit-input-placeholder {
+  color: #fff;
+}
+.right .words .input :-moz-placeholder {
+  color: #fff;
+}
+.right .words .input ::-moz-placeholder {
+  color: #fff;
+}
+.right .words .input :-ms-input-placeholder {
+  color: #fff;
+}
 .right .words .input .btn {
   height: 50px;
   font-size: 18px;
