@@ -58,10 +58,10 @@ body {
   font-size: 25px;
   font-weight: 400;
 }
-.right .words .advertiser {
+.right .words .organization {
   margin-top: 10px;
 }
-.right .words .advertiser a {
+.right .words .organization a {
   text-decoration: underline;
 }
 .right .words .input {
